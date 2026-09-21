@@ -1,0 +1,10 @@
+[
+    {
+        "Id": 1,
+        "Name": "water",
+        "Location": "dubai",
+        "Catogery": "food and water",
+        "Condition": "good",
+        "Quantity": 24
+    }
+]

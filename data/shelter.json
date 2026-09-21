@@ -1,0 +1,13 @@
+[
+    {
+        "Id": 1,
+        "Name": "pranav",
+        "Location": "kothri",
+        "Status": "OPEN",
+        "Capacity": 100,
+        "Available": 78,
+        "Occupied": 22,
+        "Facilities": "rice, water, milk",
+        "Contact": 383393838
+    }
+]
