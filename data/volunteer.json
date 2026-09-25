@@ -1,13 +1,13 @@
 [
     {
-        "Id": 1,
-        "Name": "john",
-        "Contact": "1234567891",
-        "Age": "23",
-        "Skill": "medkit",
-        "Location": "bhopal",
-        "Status": "available",
-        "Availability": "yes",
-        "Assigned To": 2
+        "id": 1,
+        "name": "john",
+        "contact": "1234567891",
+        "age": "23",
+        "skill": "medkit",
+        "location": "bhopal",
+        "status": "2",
+        "availability": "yes",
+        "assigned to": 2
     }
 ]

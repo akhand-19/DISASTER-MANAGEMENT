@@ -7,7 +7,6 @@ import activities
 import search
 import result
 
-
 while True:
     print("""
 1. Disaster
@@ -21,8 +20,7 @@ while True:
 9. Exit
 """)
 
-    choice = int(input("Enter choice: "))
-
+    choice = disaster.positive("Enter choice: ")
     if choice == 1:
         disaster.disaster()
     elif choice == 2:

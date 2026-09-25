@@ -1,38 +1,47 @@
 [
     {
-        "Id": 1,
-        "Name": "Flood",
-        "Location": "Lucknow",
-        "Status": "Active",
-        "Severity": "High",
-        "Affected People": "500",
-        "Sheltered Required": "true"
+        "id": 1,
+        "name": "Flood",
+        "location": "Lucknow",
+        "status": "Active",
+        "severity": "High",
+        "affected people": "500",
+        "sheltered required": "true"
     },
     {
-        "Id": 2,
-        "Name": "Earthquake",
-        "Location": "Bhopal",
-        "Status": "resolved",
-        "Severity": "Medium",
-        "Affected People": "200",
-        "Sheltered Required": "false"
-    },
-    { 
-        "Id": 4,
-        "Name": "Aarav",
-        "Location": "Indore Railway Station",
-        "Status": "pending",
-        "Severity": "medium",
-        "Affected People": 75,
-        "Sheltered Required": "true"
+        "id": 2,
+        "name": "Earthquake",
+        "location": "Bhopal",
+        "status": "Under Control",
+        "severity": "Medium",
+        "affected people": "200",
+        "sheltered required": "false"
     },
     {
-        "Id": 5,
-        "Name": "Meera",
-        "Location": "Bhopal Lake Road",
-        "Status": "active",
-        "Severity": "low",
-        "Affected People": 40,
-        "Sheltered Required": "false"
+        "id": 3,
+        "name": "Aarav",
+        "location": "Indore Railway Station",
+        "status": "pending",
+        "severity": "medium",
+        "affected people": 75,
+        "sheltered required": "true"
+    },
+    {
+        "id": 4,
+        "name": "Meera",
+        "location": "Bhopal Lake Road",
+        "status": "Under Control",
+        "severity": "low",
+        "affected people": 40,
+        "sheltered required": "false"
+    },
+    {
+        "id": 5,
+        "name": "Landslide",
+        "location": "bombay",
+        "affected people": 345,
+        "sheltered required": "true",
+        "severity": "high",
+        "status": "active"
     }
 ]

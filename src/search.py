@@ -14,7 +14,14 @@ def heading(a):
     print(a.center(30))
 def pause():
     print("\n Enter To Continue ........")
-
+def positive(x):
+    while True:
+        try:
+            n = int(input(x))
+            if n > 0: return n
+        except ValueError:
+            pass
+        print("Enter Valid Number!")
 
 def search_disaster():
     search=input("Enter Id / Name / Location :  ")
@@ -23,15 +30,15 @@ def search_disaster():
     with open(get_path("disaster.json"), "r") as f:
         disaster=json.load(f)
     for d in disaster:
-     if search==d["Id"] or search==d["Name"] or search==d["Location"]:
+        if search==d["id"] or search==d["name"] or search==d["location"]:
             print(f'''
-            Id:  {d["Id"]} 
-            Name:  {d["Name"]} 
-            Location:  {d["Location"]}
-            Status:  {d["Status"]}
-            Severity:  {d["Severity"]}
-            Affected People:  {d["Affected People"]}
-            Sheltered Required: {d["Sheltered Required"]}
+            Id:  {d["id"]} 
+            Name:  {d["name"]} 
+            Location:  {d["location"]}
+            Status:  {d["status"]}
+            Severity:  {d["severity"]}
+            Affected People:  {d["affected people"]}
+            Sheltered Required: {d["sheltered required"]}
             ''')
 
     
@@ -42,17 +49,17 @@ def search_volunteer():
     with open(get_path("volunteer.json"), "r") as f:
         volunteer=json.load(f)
     for v in volunteer:
-        if search==v["Id"] or search==v["Name"] or search==v["Skill"]:
+        if search==v["id"] or search==v["name"] or search==v["skill"]:
             print(f'''
-            Volunteer ID: {v["Id"]}
-            Name: {v["Name"]}
-            Age: {v["Age"]}
-            Contact: {v["Contact"]}
-            Skill: {v["Skill"]}
-            Location: {v["Location"]}
-            Availability: {v["Availability"]}
-            Status: {v["Status"]}
-            Assigned To: {v["Assigned To"]}
+            Volunteer ID: {v["id"]}
+            Name: {v["name"]}
+            Age: {v["age"]}
+            Contact: {v["contact"]}
+            Skill: {v["skill"]}
+            Location: {v["location"]}
+            Availability: {v["availability"]}
+            Status: {v["status"]}
+            Assigned To: {v["assigned to"]}
             ''') 
 
 
@@ -63,15 +70,15 @@ def search_victim():
     with open(get_path("victim.json"), "r") as f:
         victim=json.load(f)
     for v in victim:
-        if search==v["Id"] or search==v["Name"] or search==v["Location"]:
+        if search==v["id"] or search==v["name"] or search==v["location"]:
             print(f'''
-            Id:  {v["Id"]} 
-            Victim Name:  {v["Name"]} 
-            Location:  {v["Location"]}
-            Status:  {v["Status"]}
-            Emergency:  {v["Emergency"]}
-            Age:  {v["Age"]}
-            Phone number : {v["Phone number"]}
+            Id:  {v["id"]} 
+            Victim Name:  {v["name"]} 
+            Location:  {v["location"]}
+            Status:  {v["status"]}
+            Emergency:  {v["emergency"]}
+            Age:  {v["age"]}
+            Phone number : {v["phone number"]}
             ''')
 
 
@@ -82,17 +89,17 @@ def search_shelter():
     with open(get_path("shelter.json"), "r") as f:
         shelter=json.load(f)
     for s in shelter:
-        if search==s["Id"] or search==s["Name"] or search==s["Location"]:
+        if search==s["id"] or search==s["name"] or search==s["location"]:
             print(f'''
-            Shelter ID:  {s["Id"]}
-            Name:  {s["Name"]}
-            Location:  {s["Location"]}
-            Capacity:  {s["Capacity"]}
-            Occupied:  {s["Occupied"]}
-            Available:  {s["Available"]}
-            Contact:  {s["Contact"]}
-            Facilities:  {s["Facilities"]}
-            Status:  {s["Status"]}
+            Shelter ID:  {s["id"]}
+            Name:  {s["name"]}
+            Location:  {s["location"]}
+            Capacity:  {s["capacity"]}
+            Occupied:  {s["occupied"]}
+            Available:  {s["available"]}
+            Contact:  {s["contact"]}
+            Facilities:  {s["facilities"]}
+            Status:  {s["status"]}
             ''')
 
 
@@ -103,14 +110,14 @@ def search_resources():
     with open(get_path("resources.json"), "r") as f:
         resources=json.load(f)
     for r in resources:
-        if search==r["Id"] or search==r["Name"] or search==r["Location"]:
+        if search==r["id"] or search==r["name"] or search==r["location"]:
             print(f'''
-            Resource ID:  {r["Id"]}
-            Name:  {r["Name"]}
-            Location:  {r["Location"]}
-            Catogery:  {r["Catogery"]}
-            Condition:  {r["Condition"]}
-            Quantity:  {r["Quantity"]}
+            Resource ID:  {r["id"]}
+            Name:  {r["name"]}
+            Location:  {r["location"]}
+            Catogery:  {r["catogery"]}
+            Condition:  {r["condition"]}
+            Quantity:  {r["quantity"]}
             ''')
 
 
@@ -140,4 +147,3 @@ def search():
             search_volunteer()
         case 5:
             search_resources()
-

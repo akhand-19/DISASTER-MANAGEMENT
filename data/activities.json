@@ -1,53 +1,53 @@
 {
     "alerts": [
         {
-            "Id": 1,
-            "Message": "flood is coming",
-            "Location": "bhopal",
-            "Status": "Closed"
+            "id": 1,
+            "message": "flood is coming",
+            "location": "bhopal",
+            "status": "Closed"
         },
         {
-            "Id": 2,
-            "Message": "big earthquake",
-            "Location": "indore",
-            "Status": "Active"
+            "id": 2,
+            "message": "big earthquake",
+            "location": "indore",
+            "status": "Active"
         }
     ],
     "tasks": [
         {
-            "Id": 1,
-            "Task": "rescue",
-            "Status": "done"
+            "id": 1,
+            "task": "rescue",
+            "status": "done"
         }
     ],
     "donations": [
         {
-            "Id": 1,
-            "Donor": "jojo ",
-            "Resource": "water bottle",
-            "Quantity": 300
+            "id": 1,
+            "donor": "jojo ",
+            "resource": "water bottle",
+            "quantity": 300
         },
         {
-            "Id": 2,
-            "Donor": "john",
-            "Resource": "milk bottle",
-            "Quantity": 45
+            "id": 2,
+            "donor": "john",
+            "resource": "milk bottle",
+            "quantity": 45
         }
     ],
     "requests": [
         {
-            "Id": 1,
-            "Name": "peter",
-            "Location": "goa",
-            "Description": "need food",
-            "Status": "solved"
+            "id": 1,
+            "name": "peter",
+            "location": "goa",
+            "description": "need food",
+            "status": "solved"
         },
         {
-            "Id": 2,
-            "Name": "navya",
-            "Location": "mumbai",
-            "Description": "need medicine",
-            "Status": "Pending"
+            "id": 2,
+            "name": "navya",
+            "location": "mumbai",
+            "description": "need medicine",
+            "status": "Pending"
         }
     ]
 }

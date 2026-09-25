@@ -1,10 +1,10 @@
 [
     {
-        "Id": 1,
-        "Name": "water",
-        "Location": "dubai",
-        "Catogery": "food and water",
-        "Condition": "good",
-        "Quantity": 24
+        "id": 1,
+        "name": "water",
+        "location": "dubai",
+        "catogery": "food and water",
+        "condition": "good",
+        "quantity": 24
     }
 ]

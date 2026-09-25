@@ -1,13 +1,13 @@
 [
     {
-        "Id": 1,
-        "Name": "pranav",
-        "Location": "kothri",
-        "Status": "OPEN",
-        "Capacity": 100,
-        "Available": 78,
-        "Occupied": 22,
-        "Facilities": "rice, water, milk",
-        "Contact": 383393838
+        "id": 1,
+        "name": "pranav",
+        "location": "kothri",
+        "status": "OPEN",
+        "capacity": 100,
+        "available": 78,
+        "occupied": 22,
+        "facilities": "rice, water, milk",
+        "contact": 383393838
     }
 ]

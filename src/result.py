@@ -14,6 +14,14 @@ def heading(a):
     print(a.center(30))
 def pause():
     print("\n Enter To Continue ........")
+def positive(x):
+    while True:
+        try:
+            n = int(input(x))
+            if n > 0: return n
+        except ValueError:
+            pass
+        print("Enter Valid Number!")
 
 def statistic():
     line();heading("DISASTER MANAGEMENT STATISTICS");line()
@@ -29,19 +37,19 @@ def statistic():
         resources=json.load(f)
     with open(get_path("activities.json"), "r") as f:
         activities=json.load(f)
-    print("Total Disaster : ", max(d["Id"] for d in disaster ))
-    print("Total Victims  : ", max(v["Id"] for v in victim ))
-    print("Total Shelter  : ", max(s["Id"] for s in shelter ))
-    print("Total Volunteeer : ", max(v["Id"] for v in volunteer ))
-    print("Total Resources : ", max(r["Id"] for r in resources ))
-    print("Total Alerts : ", max(d["Id"] for d in activities["alerts"] ))
-    print("Total Rescue Requests : ", max(d["Id"] for d in activities["requests"] ))
-    print("Total Donation : ", max(d["Id"] for d in activities["donations"] ))
-    print("Total Tasks : ", max(d["Id"] for d in activities["tasks"] ))
+    print("Total Disaster : ",max(d["id"] for d in disaster ))
+    print("Total Victims  : ",max(v["id"] for v in victim ))
+    print("Total Shelter  : ",max(s["id"] for s in shelter ))
+    print("Total Volunteeer : ",max(v["id"] for v in volunteer ))
+    print("Total Resources : ",max(r["id"] for r in resources ))
+    print("Total Alerts : ",max(d["id"] for d in activities["alerts"] ))
+    print("Total Rescue Requests : ",max(d["id"] for d in activities["requests"] ))
+    print("Total Donation : ",max(d["id"] for d in activities["donations"] ))
+    print("Total Tasks : ",max(d["id"] for d in activities["tasks"] ))
     line()
-    safe=sum(1 for v in victim if v["Status"]=="safe")
-    rescued=sum(1 for v in victim if v["Status"]=="rescued")
-    needing_help=sum(1 for v in victim if v["Status"]=="needing help")
+    safe=sum(1 for v in victim if v["status"]=="safe")
+    rescued=sum(1 for v in victim if v["status"]=="rescued")
+    needing_help=sum(1 for v in victim if v["status"]=="needing help")
     print(f"Victim Safe: {safe}\nVictim Rescued: {rescued}\nVictim Needing Help: {needing_help}")
 
 
@@ -51,9 +59,9 @@ def statistic():
 def result():
     print('''
     1). STATISTICS
-    # 2). RESULT
+    2). RESULT
     ''')
-    choice=int(input("Enter The Option : "))
+    choice=positive("Enter The Option : ")
     match choice:
         case 1:
             statistic()

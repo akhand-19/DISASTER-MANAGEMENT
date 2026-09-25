@@ -1,11 +1,11 @@
 [
     {
-        "Id": 1,
-        "Name": "DURGA",
-        "Location": "bhopal",
-        "Status": "safe",
-        "Emergency": "need ambulance",
-        "Age": 12,
-        "Phone number": 7878787878
+        "id": 1,
+        "name": "DURGA",
+        "location": "bhopal",
+        "status": "safe",
+        "emergency": "need ambulance",
+        "age": 12,
+        "phone number": 7878787878
     }
 ]
