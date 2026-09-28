@@ -89,7 +89,7 @@ def volunteer():
             with open(get_path("volunteer.json"), "r") as f:
                 volunteer = json.load(f)
             id = positive("Enter Volunteer ID: ")
-            status = positive("Enter Choice\n\t1.) Available\n\t2). Not Available\n: ")
+            choice = positive("Enter Choice\n\t1.) Available\n\t2). Not Available\n: ")
             for v in volunteer:
                 if v["id"] == id:
                     if choice == 1:

@@ -11,6 +11,12 @@
             "message": "big earthquake",
             "location": "indore",
             "status": "Active"
+        },
+        {
+            "id": 3,
+            "message": "help me, i am near the station",
+            "location": "sehore",
+            "status": "Closed"
         }
     ],
     "tasks": [
@@ -18,12 +24,17 @@
             "id": 1,
             "task": "rescue",
             "status": "done"
+        },
+        {
+            "id": 2,
+            "task": "go to flood area",
+            "status": "done"
         }
     ],
     "donations": [
         {
             "id": 1,
-            "donor": "jojo ",
+            "donor": "bob",
             "resource": "water bottle",
             "quantity": 300
         },
@@ -32,6 +43,12 @@
             "donor": "john",
             "resource": "milk bottle",
             "quantity": 45
+        },
+        {
+            "id": 3,
+            "donor": "harish",
+            "resource": "medicine",
+            "quantity": 88
         }
     ],
     "requests": [
@@ -39,7 +56,7 @@
             "id": 1,
             "name": "peter",
             "location": "goa",
-            "description": "need food",
+            "description": "need water",
             "status": "solved"
         },
         {
@@ -47,6 +64,13 @@
             "name": "navya",
             "location": "mumbai",
             "description": "need medicine",
+            "status": "fulfilled"
+        },
+        {
+            "id": 3,
+            "name": "joseph",
+            "location": "manipur",
+            "description": "need food",
             "status": "Pending"
         }
     ]

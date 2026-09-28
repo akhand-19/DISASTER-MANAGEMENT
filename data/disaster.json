@@ -43,5 +43,14 @@
         "sheltered required": "true",
         "severity": "high",
         "status": "active"
+    },
+    {
+        "id": 6,
+        "name": "landslide",
+        "location": "goa",
+        "affected people": 56,
+        "sheltered required": "true",
+        "severity": "high",
+        "status": "Resolved"
     }
 ]

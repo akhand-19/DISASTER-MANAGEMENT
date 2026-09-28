@@ -66,7 +66,7 @@ def disaster():
             with open(get_path("disaster.json"), "r") as f:
                 disasters = json.load(f)
             if disasters:
-                new_id = max(d["Id"] for d in disasters) + 1
+                new_id = max(d["id"] for d in disasters) + 1
             else:
                 new_id = 1
 

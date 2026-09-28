@@ -92,3 +92,4 @@ def resources():
             with open(get_path("resources.json"), "w") as f:
                 json.dump(resources, f, indent=4)
     line()
+    pause()

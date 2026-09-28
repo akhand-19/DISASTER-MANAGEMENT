@@ -37,7 +37,8 @@ It can manage:
 > 🔔 Alerts  
 > 🆘 Rescue Requests  
 > 💝 Donations  
-> 📋 Tasks
+> 📋 Tasks  
+> 🔍 Search
 
 The **Disaster Management System** uses the programming language **Python** to implement the logic of the program, while the data is stored in **JSON** files.
 
@@ -128,6 +129,26 @@ All are managed by centralized activity module.
 
 </td>
 </tr>
+
+<tr>
+<td>
+
+### 📃 Result Management
+
+- Displays disaster statistics
+- Shows victim status counts
+- Tracks resources and shelters
+- Summarizes alerts, requests, donations & tasks 
+
+</td>
+<td>
+
+### 🔍 Search Feature
+
+- Search by ID, name, or location
+- Supports 5 record types
+- Displays matching details
+- Uses JSON data
 </table>
 
 ---

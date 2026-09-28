@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "pranav",
+        "name": "public hall",
         "location": "kothri",
         "status": "OPEN",
         "capacity": 100,
@@ -9,5 +9,16 @@
         "occupied": 22,
         "facilities": "rice, water, milk",
         "contact": 383393838
+    },
+    {
+        "id": 2,
+        "name": "community shelter",
+        "location": "goa",
+        "status": "Close",
+        "capacity": 123,
+        "available": 21,
+        "occupied": 102,
+        "facilities": "food",
+        "contact": "456454567"
     }
 ]

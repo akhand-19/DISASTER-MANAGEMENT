@@ -3,9 +3,18 @@
         "id": 1,
         "name": "DURGA",
         "location": "bhopal",
-        "status": "safe",
+        "status": "Safe",
         "emergency": "need ambulance",
         "age": 12,
         "phone number": 7878787878
+    },
+    {
+        "id": 2,
+        "name": "harry",
+        "location": "madras",
+        "status": "Need Help",
+        "emergency": "urgent medication",
+        "age": 23,
+        "phone number": "7897897890"
     }
 ]

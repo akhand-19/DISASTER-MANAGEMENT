@@ -62,7 +62,7 @@ def victim():
             emergency = input("Enter Emergency: ")
             phone_number = input("Phone number : ")
             location = input("Enter Location: ")
-            status = input("Enter Status: ")
+            status = input("Enter Status (Need Help/Rescued/Hospitalised/Safe):  ")
 
             with open(get_path("victim.json"), "r") as f:
                 victim = json.load(f)
@@ -96,7 +96,7 @@ def victim():
             id = positive("Enter Victim ID: ")
             if not check_id(victim, id):
                 return
-            choice = input("Enter Status\n\t1). Need Help\n\t2). Rescued\n\t3). Hospitalized\n\t4). Safe\n: ")
+            choice = positive("Enter Status\n\t1). Need Help\n\t2). Rescued\n\t3). Hospitalized\n\t4). Safe\n: ")
             for v in victim:
                 if v["id"] == id:
                     if choice == 1:

@@ -47,9 +47,9 @@ def statistic():
     print("Total Donation : ",max(d["id"] for d in activities["donations"] ))
     print("Total Tasks : ",max(d["id"] for d in activities["tasks"] ))
     line()
-    safe=sum(1 for v in victim if v["status"]=="safe")
-    rescued=sum(1 for v in victim if v["status"]=="rescued")
-    needing_help=sum(1 for v in victim if v["status"]=="needing help")
+    safe=sum(1 for v in victim if v["status"]=="Safe")
+    rescued=sum(1 for v in victim if v["status"]=="Rescued")
+    needing_help=sum(1 for v in victim if v["status"]=="Need Help")
     print(f"Victim Safe: {safe}\nVictim Rescued: {rescued}\nVictim Needing Help: {needing_help}")
 
 
@@ -58,8 +58,7 @@ def statistic():
 
 def result():
     print('''
-    1). STATISTICS
-    2). RESULT
+    1) STATISTICS
     ''')
     choice=positive("Enter The Option : ")
     match choice:

@@ -6,8 +6,19 @@
         "age": "23",
         "skill": "medkit",
         "location": "bhopal",
-        "status": "2",
+        "status": "Not Available",
         "availability": "yes",
         "assigned to": 2
+    },
+    {
+        "id": 2,
+        "name": "joseph",
+        "contact": "789789978",
+        "age": 78,
+        "skill": "mechanic",
+        "location": "mumbai",
+        "status": "available",
+        "availability": "yes",
+        "assigned to": 3
     }
 ]

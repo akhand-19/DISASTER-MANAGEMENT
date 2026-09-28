@@ -105,8 +105,6 @@ def activities():
 
                 case 3:
                     request_id = positive("Enter Request ID: ")
-                    if not check_id(activities["requests"], request_id):
-                        return
                     status = input("Enter Status:  ")
 
                     for r in data["requests"]:
@@ -165,8 +163,6 @@ def activities():
 
                 case 3:
                     task_id = positive("Enter Task ID: ")
-                    if not check_id(activities["tasks"],task_id):
-                        return
                     status =input("Enter Status: ")
                     for t in data["tasks"]:
                         if t["id"] == task_id:
